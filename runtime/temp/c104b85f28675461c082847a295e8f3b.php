@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"/www/wwwroot/mygw.com/public/../application/index/view/index/yuanma.html";i:1598100310;s:63:"/www/wwwroot/mygw.com/application/index/view/common/header.html";i:1598099636;s:63:"/www/wwwroot/mygw.com/application/index/view/common/footer.html";i:1598094191;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"/www/wwwroot/mygw.com/public/../application/index/view/index/yuanma.html";i:1598100310;s:63:"/www/wwwroot/mygw.com/application/index/view/common/header.html";i:1598182396;s:63:"/www/wwwroot/mygw.com/application/index/view/common/footer.html";i:1598094191;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,9 +70,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo url('index/cdn'); ?>">CDN防攻击业务</a>
                 </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="<?php echo url('index/cdn'); ?>">香港国内外服务器</a>-->
-<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo url('index/vps'); ?>">香港国内外服务器</a>
+                </li>
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
 <!--                        行业资讯-->

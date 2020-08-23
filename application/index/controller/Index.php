@@ -78,4 +78,10 @@ class Index extends Frontend
 
     }
 
+    public function vps()
+    {
+        return $this->view->fetch();
+
+    }
+
 }

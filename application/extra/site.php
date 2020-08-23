@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '后台管理',
+  'name' => '菲度建站',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',

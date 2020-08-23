@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:69:"/www/wwwroot/mygw.com/public/../application/index/view/index/cdn.html";i:1598094961;s:63:"/www/wwwroot/mygw.com/application/index/view/common/header.html";i:1598095193;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"/www/wwwroot/mygw.com/public/../application/index/view/index/cdn.html";i:1598183125;s:63:"/www/wwwroot/mygw.com/application/index/view/common/header.html";i:1598182396;s:63:"/www/wwwroot/mygw.com/application/index/view/common/footer.html";i:1598094191;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +40,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                         <?php if(is_array($appcat) || $appcat instanceof \think\Collection || $appcat instanceof \think\Paginator): $i = 0; $__LIST__ = $appcat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                        <a class="dropdown-item" href="portfolio-4-col.html"><?php echo $vo['name']; ?></a>
+                        <a class="dropdown-item" href="<?php echo url('index/yuanma'); ?>?cat=<?php echo $vo['id']; ?>"><?php echo $vo['name']; ?></a>
 
                         <?php endforeach; endif; else: echo "" ;endif; ?>
                     </div>
@@ -71,7 +71,7 @@
                     <a class="nav-link" href="<?php echo url('index/cdn'); ?>">CDN防攻击业务</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo url('index/cdn'); ?>">香港国内外服务器</a>
+                    <a class="nav-link" href="<?php echo url('index/vps'); ?>">香港国内外服务器</a>
                 </li>
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
@@ -100,7 +100,7 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">CDN防攻击
-      <small>Subheading</small>
+      <small></small>
     </h1>
 
     <ol class="breadcrumb">
@@ -114,51 +114,57 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h3 class="card-header">Basic</h3>
+          <h3 class="card-header">入门级</h3>
           <div class="card-body">
-            <div class="display-4">$19.99</div>
-            <div class="font-italic">per month</div>
+            <div class="display-4">¥3500</div>
+            <div class="font-italic">每月</div>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">高级CC防护</li>
+            <li class="list-group-item">高级DDOS防护</li>
+            <li class="list-group-item">HTTPS/SSL支持</li>
+            <li class="list-group-item">WebSocket支持</li>
+            <li class="list-group-item">多节点负载均衡</li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a href="#" class="btn btn-primary">购买</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card card-outline-primary h-100">
-          <h3 class="card-header bg-primary text-white">Plus</h3>
+          <h3 class="card-header bg-primary text-white">商业级</h3>
           <div class="card-body">
-            <div class="display-4">$39.99</div>
-            <div class="font-italic">per month</div>
+            <div class="display-4">¥5000</div>
+            <div class="font-italic">每月</div>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">高级CC防护</li>
+            <li class="list-group-item">高级DDOS防护</li>
+            <li class="list-group-item">HTTPS/SSL支持</li>
+            <li class="list-group-item">WebSocket支持</li>
+            <li class="list-group-item">多节点负载均衡</li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a href="#" class="btn btn-primary">购买</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h3 class="card-header">Ultra</h3>
+          <h3 class="card-header">旗舰级</h3>
           <div class="card-body">
-            <div class="display-4">$159.99</div>
-            <div class="font-italic">per month</div>
+            <div class="display-4">¥7000</div>
+            <div class="font-italic">每月</div>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <li class="list-group-item">高级CC防护</li>
+            <li class="list-group-item">高级DDOS防护</li>
+            <li class="list-group-item">HTTPS/SSL支持</li>
+            <li class="list-group-item">WebSocket支持</li>
+            <li class="list-group-item">多节点负载均衡</li>
             <li class="list-group-item">
-              <a href="#" class="btn btn-primary">Sign Up!</a>
+              <a href="#" class="btn btn-primary">购买</a>
             </li>
           </ul>
         </div>
@@ -170,16 +176,18 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
     </div>
     <!-- /.container -->
-  </footer>
+</footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
