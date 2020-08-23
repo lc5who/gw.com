@@ -1,0 +1,22 @@
+[ 2020-08-22T19:48:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000096s ]
+[ info ] [ LOG ] INIT File
+[ 2020-08-22T19:48:01+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-08-22T19:48:01+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009786s ]
+[ 2020-08-22T19:48:01+08:00 ][ info ] [ DB ] INIT mysql
+[ 2020-08-22T19:48:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000088s ]
+[ info ] [ LOG ] INIT File
+[ 2020-08-22T19:48:08+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-08-22T19:48:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009439s ]
+[ 2020-08-22T19:48:08+08:00 ][ info ] [ DB ] INIT mysql
+[ 2020-08-22T19:48:08+08:00 ][ info ] [ LANG ] /www/wwwroot/mygw.com/application/admin/lang/zh-cn.php
+[ 2020-08-22T20:28:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ LOG ] INIT File
+[ 2020-08-22T20:28:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-08-22T20:28:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010496s ]
+[ 2020-08-22T20:28:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2020-08-22T20:28:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ LOG ] INIT File
+[ 2020-08-22T20:28:41+08:00 ][ info ] [ CACHE ] INIT File
+[ 2020-08-22T20:28:41+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009474s ]
+[ 2020-08-22T20:28:42+08:00 ][ info ] [ DB ] INIT mysql
+[ 2020-08-22T20:28:42+08:00 ][ info ] [ LANG ] /www/wwwroot/mygw.com/application/admin/lang/zh-cn.php

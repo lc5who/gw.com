@@ -1,0 +1,150 @@
+{include file="common/header" /}
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        {volist name="banner" id="vo"}
+        <div class="carousel-item active" style="background-image: url('{$vo.image}')">
+          <div class="carousel-caption d-none d-md-block">
+<!--            <h3>First Slide</h3>-->
+<!--            <p>This is a description for the first slide.</p>-->
+          </div>
+        </div>
+
+        {/volist}
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4">Welcome to Modern Business</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">程序建站</h4>
+          <div class="card-body">
+            <p class="card-text">多年行业经验服务,专注于创意设计和传播应用，探索并实现商业价值最大化,程序保证100%安全无漏洞,独特的一站式服务为您的业务保驾护航.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{:url('index/yuanma')}?cat=15" class="btn btn-primary">查看</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">CDN加速防攻击</h4>
+          <div class="card-body">
+            <p class="card-text">静态加速,
+              动态加速,
+              自定义缓存策略，
+              WAF智能防火墻,
+              HTTPS/SSL支持,
+              WebSocket支持,
+              节点负载均衡,
+              节点故障转移,
+              自动压缩,
+              高效DDOS/CC防护.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{:url('index/cdn')}" class="btn btn-primary">查看</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">香港/国外服务器</h4>
+          <div class="card-body">
+            <p class="card-text">
+              BGP.NET全球顶级数据中心
+
+              亚太CN2 GIA回国优化带宽 稳定高速
+              大陆直连 CN2回国优化
+              一手优质服务器,独特的售后服务,为您的业务保驾护航.
+              </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Section -->
+    <h2>项目案例</h2>
+
+    <div class="row">
+      {volist name="app" id="vo"}
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="{:url('index/yuanmadetail')}?id={$vo['id']}"><img class="card-img-top" src="{$vo.image}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="{:url('index/yuanmadetail')}?id={$vo['id']}">{$vo.title}</a>
+            </h4>
+            <p class="card-text">{$vo.description}</p>
+          </div>
+        </div>
+      </div>
+      {/volist}
+    </div>
+    <!-- /.row -->
+
+    <!-- Features Section -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Modern Business Features</h2>
+        <p>The Modern Business template by Start Bootstrap includes:</p>
+        <ul>
+          <li>
+            <strong>Bootstrap v4</strong>
+          </li>
+          <li>jQuery</li>
+          <li>Font Awesome</li>
+          <li>Working contact form with validation</li>
+          <li>Unstyled page elements for easy customization</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+{include file="common/footer" /}
+

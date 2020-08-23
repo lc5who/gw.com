@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{$site.name}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">{$site.name}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/index')}">首页</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        网站程序
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                        {volist name="appcat" id="vo"}
+                        <a class="dropdown-item" href="{:url('index/yuanma')}?cat={$vo['id']}">{$vo.name}</a>
+
+                        {/volist}
+                    </div>
+                </li>
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        Blog-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">-->
+<!--                        <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>-->
+<!--                        <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>-->
+<!--                        <a class="dropdown-item" href="blog-post.html">Blog Post</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        Other Pages-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">-->
+<!--                        <a class="dropdown-item" href="full-width.html">Full Width Page</a>-->
+<!--                        <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>-->
+<!--                        <a class="dropdown-item" href="faq.html">FAQ</a>-->
+<!--                        <a class="dropdown-item" href="404.html">404</a>-->
+<!--                        <a class="dropdown-item" href="pricing.html">Pricing Table</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/cdn')}">CDN防攻击业务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/fuwuqi')}">香港国内外服务器</a>
+                </li>
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        行业资讯-->
+<!--                    </a>-->
+<!--                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">-->
+<!--                        {volist name="appcat" id="vo"}-->
+<!--                        <a class="dropdown-item" href="portfolio-4-col.html">{$vo.name}</a>-->
+
+<!--                        {/volist}-->
+<!--                    </div>-->
+<!--                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/news')}">行业资讯</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{:url('index/contact')}">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
